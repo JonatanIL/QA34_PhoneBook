@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.AddNewContacts" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-08T18:04:16" hostname="DESKTOP-K3383S5" time="1.577">
+  <properties/>
+  <testcase name="addNewContactSuccess" classname="tests.AddNewContacts" time="1.577"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

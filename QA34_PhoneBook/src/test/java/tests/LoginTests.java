@@ -13,12 +13,13 @@ public void preCondition(){
     if (app.getHelperUser().isLogged()){
         app.getHelperUser().logout();
     }
+
 }
 
 
     @Test
     public void loginSuccess() {
-        User user =new User().setEmail("Noa@gmail.com").setPassword("Nnoa1234$");
+        User user =new User().setEmail("noa@gmail.com").setPassword("Nnoa12345$");
        app.getHelperUser().openLoginRegistrationForm();
 
         app.getHelperUser().fillLoginRegistrationForm(user);
@@ -28,11 +29,10 @@ public void preCondition(){
     // login negative
     @Test
     public void loginNegativeTestsWrongEmail() {
-        User user =new User().setEmail("Noagmail.com").setPassword("Nnoa1234$");
+        User user =new User().setEmail("Noagmail.com").setPassword("Nnoa12345$");
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm(user);
         app.getHelperUser().submitLogin();
-
         Assert.assertFalse(app.getHelperUser().isLogged());
         Assert.assertTrue(app.getHelperUser().isAlertDisplayed());
         Assert.assertTrue(app.getHelperUser().isErrorFormatDisplayed());
