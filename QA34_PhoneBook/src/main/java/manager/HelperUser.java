@@ -11,12 +11,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
-public class HelperUser extends HelperBase{
+public class HelperUser extends HelperBase {
 
 
     public HelperUser(WebDriver wd) {
         super(wd);
     }
+
     public void openLoginRegistrationForm() {
         WebElement loginTab = wd.findElement(By.cssSelector("a[href='/login']"));
         loginTab.click();
@@ -41,8 +42,8 @@ public class HelperUser extends HelperBase{
 
     public boolean isLogged() {
         // sign out present? --> logged
-        List<WebElement > list =wd.findElements(By.xpath("//button[text()='Sign Out']"));
-        return list.size()>0;
+        List<WebElement> list = wd.findElements(By.xpath("//button[text()='Sign Out']"));
+        return list.size() > 0;
     }
 
     public void logout() {
@@ -53,9 +54,9 @@ public class HelperUser extends HelperBase{
         // wait
         Alert alert = new WebDriverWait(wd, Duration.ofSeconds(5))
                 .until(ExpectedConditions.alertIsPresent());
-        if(alert==null){
+        if (alert == null) {
             return false;
-        }else {
+        } else {
             return true;
         }
     }
@@ -80,5 +81,10 @@ public class HelperUser extends HelperBase{
         type(By.xpath("//input[1]"), user.getEmail());
         type(By.xpath("//input[2]"), user.getPassword());
         submitLogin();
+    }
+
+    public boolean isTextDisplayed() {
+        System.out.println(wd.findElement(By.xpath("//h1[contains(text(),'No Contacts here!')]")).getText());
+        return new WebDriverWait(wd, Duration.ofSeconds(5)).until(ExpectedConditions.textToBePresentInElement(wd.findElement(By.xpath("//h1[contains(text(),'No Contacts here!')]")), "No Contacts here!"));
     }
 }

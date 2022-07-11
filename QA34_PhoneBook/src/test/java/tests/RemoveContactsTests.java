@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -19,6 +20,7 @@ public class RemoveContactsTests extends TestBase {
         app.getHelperUser().submitLogin();
         app.contact().openContacts();
         app.contact().removeAllContacts();
+        Assert.assertTrue(app.getHelperUser().isTextDisplayed());
     }
 }
 
