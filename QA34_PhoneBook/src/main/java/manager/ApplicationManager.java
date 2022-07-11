@@ -6,32 +6,33 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class ApplicationManager {
+
     WebDriver wd;
     HelperUser helperUser;
-    HelperContacts helperContacts;
+    HelperContact contact;
 
+    public void init(){
 
-    public void init() {
-        wd = new ChromeDriver();
+        wd=new ChromeDriver();
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         wd.navigate().to("https://contacts-app.tobbymarshall815.vercel.app/");
-        helperUser = new HelperUser(wd);
-        helperContacts = new HelperContacts(wd);
+        helperUser=new HelperUser(wd);
+        contact = new HelperContact(wd);
+
     }
 
-    public void stop() {
+    public void stop(){
+
         wd.quit();
-
     }
+
 
     public HelperUser getHelperUser() {
         return helperUser;
     }
 
-
-    public HelperContacts cont() {
-        return helperContacts;
+    public HelperContact contact() {
+        return contact;
     }
-
 }

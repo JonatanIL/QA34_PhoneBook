@@ -3,19 +3,24 @@ package tests;
 import manager.ApplicationManager;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-
-
 public class TestBase {
-    static ApplicationManager app = new ApplicationManager(); //видимость которая распространяется на один пекедж
+
+    static ApplicationManager app = new ApplicationManager();
+
 
     @BeforeSuite
     public void setUp() {
-        app.init();// первая строчка кода которая работает
+        app.init();
+
     }
 
 
     @AfterSuite
-    public void tearDown() { //app.stop();
+    public void tearDown() {
+      // app.stop();
     }
-}
 
+
+
+
+}
