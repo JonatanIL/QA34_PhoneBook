@@ -1,0 +1,6 @@
+22:06:13.920  INFO  manager.ApplicationManager - All tests run in chrome browser
+22:06:14.739  INFO  manager.ApplicationManager - Current Url----> https://contacts-app.tobbymarshall815.vercel.app/home
+22:06:14.819  INFO  tests.TestBase - Start method with name -->loginSuccess
+22:06:14.823  INFO  manager.MyListener - New Before find by By.xpath: //button[text()='Sign Out']
+22:06:19.848  INFO  manager.MyListener - WebDriver start find element--->By.cssSelector: a[href='/login']
+22:06:19.990  INFO  manager.MyListener - WebDriver start find element--->By.xpath: //input[1]

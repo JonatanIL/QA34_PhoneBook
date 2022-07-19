@@ -1,0 +1,9 @@
+21:40:12.016  INFO  manager.ApplicationManager - All tests run in chrome browser
+21:40:12.942  INFO  manager.ApplicationManager - Current Url----> https://contacts-app.tobbymarshall815.vercel.app/home
+21:40:13.035  INFO  tests.TestBase - Start method with name -->loginSuccess
+21:40:13.037  INFO  manager.MyListener - New Before find by By.xpath: //button[text()='Sign Out']
+21:40:18.085  INFO  manager.MyListener - WebDriver start find element--->By.cssSelector: a[href='/login']
+21:40:18.218  INFO  manager.MyListener - WebDriver start find element--->By.xpath: //input[1]
+21:40:18.433  INFO  manager.MyListener - WebDriver start find element--->By.xpath: //input[22]
+21:40:23.518  INFO  manager.MyListener - The name of method with error-->findElement
+21:40:23.519  INFO  manager.MyListener - We have a problem--->java.lang.reflect.InvocationTargetException

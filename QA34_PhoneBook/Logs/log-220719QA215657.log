@@ -1,0 +1,17 @@
+21:57:03.074  INFO  manager.ApplicationManager - All tests run in chrome browser
+21:57:03.929  INFO  manager.ApplicationManager - Current Url----> https://contacts-app.tobbymarshall815.vercel.app/home
+21:57:04.013  INFO  tests.TestBase - Start method with name -->loginSuccess
+21:57:04.016  INFO  manager.MyListener - New Before find by By.xpath: //button[text()='Sign Out']
+21:57:09.065  INFO  manager.MyListener - WebDriver start find element--->By.cssSelector: a[href='/login']
+21:57:09.201  INFO  manager.MyListener - WebDriver start find element--->By.xpath: //input[1]
+21:57:09.391  INFO  manager.MyListener - WebDriver start find element--->By.xpath: //input[22]
+21:57:14.422  INFO  manager.MyListener - The name of method with error-->findElement
+21:57:14.429  INFO  manager.MyListener - We have a problem--->org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[22]"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DESKTOP-K3383S5', ip: '10.100.102.60', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3c9901c9d715defcd366db045a3a4221, findElement {using=xpath, value=//input[22]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56511}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56511/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c9901c9d715defcd366db045a3a4221

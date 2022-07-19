@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.RemoveContactsTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-11T15:22:49" hostname="DESKTOP-K3383S5" time="10.748">
-  <properties/>
-  <testcase name="RemoveContacts" classname="tests.RemoveContactsTests" time="10.748"/>
-  <system-out><![CDATA[No Contacts here!
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
