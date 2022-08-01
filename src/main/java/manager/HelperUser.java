@@ -34,10 +34,9 @@ public class HelperUser extends HelperBase{
 
         // find +click+clear+sendKey
         type(By.xpath("//input[1]"), email);
-        takeScreenShots("C:\\Users\\Admin\\Documents\\QA34_automation\\QA34_PhoneBook\\QA34_PhoneBook\\src\\test\\screenshots/screen-1.png");
 
         // find +click+clear+sendKey
-        type(By.xpath("//input[22]"), password);
+        type(By.xpath("//input[2]"), password);
     }
 
     public boolean isLogged() {
